@@ -50,6 +50,8 @@
         <label>
           <input 
             type="checkbox"
+            :checked="!anyRemaining"
+            @change="checkAllTodos"
           > 
           Check All
         </label>
@@ -90,8 +92,11 @@ export default {
   },
   computed: {
     remaining() {
-      return this,this.todos.filter(todo => !todo.completed).length
-    } 
+      return this.todos.filter(todo => !todo.completed).length
+    },
+    anyRemaining() {
+      return this.remaining != 0
+    }
   },
   directives: {
     focus: {
@@ -131,6 +136,10 @@ export default {
     cancelEdit(todo) {
       todo.title = this.beforeEditCache
       todo.editing = false
+    },
+    checkAllTodos() {
+      this.todos.forEach((todo) => todo.completed =
+      event.target.checked)
     }
   }
 }
