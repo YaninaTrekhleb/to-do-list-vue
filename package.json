@@ -45,5 +45,8 @@
     "last 2 versions",
     "not dead"
   ],
-  "homepage": "https://yaninatrekhleb.github.io/to-do-list-vue/"
+  "homepage": "https://yaninatrekhleb.github.io/to-do-list-vue/",
+  "vue": {
+    "publicPath": "/to-do-list-vue/"
+  }
 }
