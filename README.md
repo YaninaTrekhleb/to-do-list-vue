@@ -1,24 +1,6 @@
-# to-do-list-vue
+# To Do List on Vue.js
 
-## Project setup
-```
-yarn install
-```
+## A Vue.js project by Andre Madarang [tutorial](https://www.youtube.com/watch?v=A5S23KS_-bU&t=2715s&ab_channel=AndreMadarang
+)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

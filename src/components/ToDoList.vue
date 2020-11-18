@@ -1,6 +1,6 @@
 <template>
   <div id="todo-list">
-    <h2>To Do List Tasks</h2>
+    <h1>To Do List</h1>
     <input 
       type="text" 
       class="todo-input" 
@@ -120,13 +120,13 @@ export default {
       todos: [
         {
           id: 1,
-          title: 'Make course ready',
+          title: 'Finish the course',
           completed: false,
           editing: false
         },
         {
           id: 2,
-          title: 'Water Flowers',
+          title: 'To water flowers',
           completed: false,
           editing: false
         },
@@ -214,8 +214,9 @@ export default {
 
   .todo-input {
     width: 100%;
-    font-size: 1.1em;
+    font-size: 18px;
     margin-bottom: 15px;
+    padding: 10px;
   }
 
   .todo-item {
